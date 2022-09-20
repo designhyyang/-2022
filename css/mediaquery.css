@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+
+@media (max-width:340px) {
+    .mainTitleArea h3{
+        font-size: 2.8rem;
+    }
+    
+}
+
+@media (min-width:641px) {
+    .footerBtnArea{
+        display: flex;
+        background-color: #fcfcfc;
+        padding: 0 20px 20px;
+        justify-content: space-between;
+    }
+    .footerBtnArea a{
+        width: calc(50% - 10px);
+        background-color: #fff;
+        border: 1px solid #eee;
+        border-radius: 8px;
+    }
+    .footerBtnArea a:last-child{
+        background-color: #fff;
+        border: 1px solid #eee;
+        border-radius: 8px;
+    }
+}
+

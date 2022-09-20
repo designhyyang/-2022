@@ -1,0 +1,360 @@
+@charset "utf-8";
+
+*{font-family: 'Spoqa Han Sans Neo', 'sans-serif'; font-weight: normal; line-height: normal;}
+
+
+/* Header(S) */
+.wrap {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.topLogoArea{
+    width: 100%;
+    margin:0 auto;
+    padding: 50px 0 20px 0;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    width: 137px; height: 33px;
+}
+/* Header(F) */
+
+
+/* Main(S) */
+
+.mainTitBgArea{z-index: 0;}
+
+.mainTitleArea{
+    max-width: 360px;
+    margin: 0;
+    padding: 50px 20px 65px;
+    z-index: 0;
+}
+
+.mainBgArea{
+    padding-bottom: 30px;
+}
+
+.mainBgPoint{
+    position: relative;
+    z-index: 1;
+}
+.mainBoxArea{
+    width: calc(100% - 40px);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color: #fff;
+    z-index: 2;
+}
+
+.mainBgPoint::before{
+    position: absolute;
+    content: "";
+    width: 100%; height: 106px;
+    top: -10px; left: 0;
+    background-color: #202B61;
+    z-index: -1;
+}
+.imgProfile{
+    width: 60px; height: 60px;
+    margin-right: 10px;
+}
+
+
+
+.cunsumerArea{
+    position: relative;
+    top: 1;left: 0;
+}
+
+.cunsumerArea::after{
+    content: '┃';
+    font-size: 1.2rem;
+    Color: #e5e5e5;
+    position: absolute;    
+}
+/* Main(F) */
+
+
+/* Table(S) */
+.tableTitArea{
+    width: 100%; 
+    margin: 0 auto;
+    padding: 30px 20px 25px;
+    background-color: #f6fbfe;
+}
+
+.imgCalendar{
+    display: block;
+    width: 30px; height: 30px;
+    background-image: url(../images/ic_calendar.png);
+    background-size: cover;
+    background-position: 50% 50%;
+    margin-right: 5px;
+    box-sizing: border-box;
+}
+
+.tableBoxArea{
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px 20px;
+}
+
+.tableSubArea{
+    border-bottom: 1px solid #000;
+    margin-bottom: 10px;
+    padding-bottom: 7px;
+}
+
+.tableContArea{
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tr{display: table-row;}
+
+th{
+    display: table-cell;
+    padding: 10px;
+    font-size:1.6rem;
+    line-height: 26px;
+    letter-spacing: -0.8px;
+    text-align: left;
+    color: #666; 
+}
+
+th > img{
+    width: 27px; height: 18px;
+    vertical-align: text-bottom;
+    margin-left: 2px;
+}
+tr:last-child th > img{
+    width: 53px; height: 18px;
+    vertical-align: middle;
+    margin-left: 2px;
+}
+
+td{
+    display: table-cell;
+    padding: 10px 10px;
+    font-size:1.6rem;
+    line-height: 20px;
+    letter-spacing: -0.8px;
+    text-align: right;
+}
+/* Table(F) */
+
+
+/* Tab(S) */
+.tab{
+    width: 100%; height: 86px;
+    margin: 0 auto;
+    padding: 20px 20px 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+}
+
+.tab li{
+    width: 50%;
+    text-align: center;
+    color: #888;
+}
+.tab li a{
+    color: #888;
+}
+
+.tab li.on{
+    border-bottom: 3px solid #000;
+}
+.tab li.on a{
+    color: #111;
+}
+
+.tabCont{display: none;}
+.tabCont.on{
+    display: block;
+    margin: 0 auto;
+    padding: 25px 20px;
+}
+.tabCont.on .contBox{
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 15px 20px;
+}
+.tabCont.on .contBox ul li{
+    display: flex;
+    justify-content: space-between;
+}
+.tabCont.on .contBox ul li .num{
+    padding: 14px 0 10px;
+    margin-right: 10px;
+}
+.tabCont.on .contBox ul li .num p{
+    width: 30px; height: 30px;
+    text-align: center;
+    color: #fff;
+    background-color: #202B61;
+    border-radius: 50%;
+    justify-content: center;
+    vertical-align: middle;
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 30px;
+}
+.tabCont.on .contBox ul li .box_bg{
+    width: calc(100% - 40px); height: 100%;
+    background-color: #fcfcfc;
+    margin-bottom: 10px;
+    padding: 16px;
+    padding-right: 30px;
+    border-radius: 8px;
+    position: relative;
+}
+.tabCont.on .contBox ul li .box_bg::before{
+    width: 1px; height: 60%;
+    border-left: 1px solid #202B61;
+    margin-left: 14px;
+    content: "";
+    position: absolute;
+    left: -40px;
+    top: 44%;
+    z-index: -1;
+}
+.tabCont.on .contBox ul li .box_bg::after{
+    background-image: url(../images/Ic_arrow_down.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    position: absolute;
+    content: "";
+    width: 9px; height: 5px;
+    left: -30.4px;
+    bottom: -5%;
+}
+.tabCont.on .contBox ul li:last-child .box_bg{margin-bottom: 0;}
+.tabCont.on .contBox ul li:last-child .box_bg::before{
+    border: none;
+}
+.tabCont.on .contBox ul li:last-child .box_bg::after{
+    display: none;
+}
+.tabCont.on .contBox ul li .box_bg > p{
+    font-size: 1.5rem;
+    line-height: 26px;
+    letter-spacing: -0.75px;
+}
+
+.contBtnArea{
+    width: 115px; height: 29px;
+    margin-top: 8px;
+    padding: 7px 10px;
+    border-radius: 4px;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    position: relative;
+    cursor: pointer;
+}
+
+.contBtnArea p::after{
+    width: 9px; height: 9px;
+    background-image: url(../images/btn_more_l_small.png);
+    background-size: cover;
+    background-position: 50% 50%;
+    content: "";
+    position: absolute;
+    right: 10px; top: 10px;
+}
+
+.notice{
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.noticeTit{
+    position: relative;
+    margin: 0 0 10px 23px;
+}
+
+.noticeTit::before{
+    background-image: url(../images/ic_info_!_t.png);
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 18px; height: 18px;
+    content: "";
+    position: absolute;
+    left: -23px; top: 2px;
+}
+
+.noticeTxt{
+    width: 100%;
+    padding: 0 15px;
+    font-size: 1.4rem;
+    line-height: 20px;
+    letter-spacing: -0.7px;
+    color: #666;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.noticeTxt::before{
+    background-image: url(../images/ic_dot.png);
+    width: 2px; height: 2px;
+    background-size: cover;
+    background-position: 50% 50%;
+    position: absolute;
+    content: "";
+    top: 7px;
+    left: 8px;
+}
+/* Tab(F) */
+
+
+
+
+/* Footer(S) */
+.footerBtnArea > a{
+    display: block;
+    width: 100%; 
+    padding: 25px 20px;
+    border-bottom: 1px solid #eee;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #111;
+    letter-spacing: -0.85px;   
+    position: relative;
+    cursor: pointer;
+}
+.footerBtnArea > a:last-child{border: none;}
+.footerBtnArea > a::after{
+    background-image: url(../images/btn_more_l.png);
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 12px; height: 12px;
+    position: absolute;
+    content: "";
+    top: 32px;
+    right: 20px;
+}
+
+.footerLogoArea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; height: 143px;
+    background-color: rgba(32,43,97,.29);
+}
+
+.footerLogoArea img{
+    width: 137px; height: 33px;
+}
+/* Footer(F) */
+
+
+
+
